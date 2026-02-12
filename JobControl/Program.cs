@@ -8,6 +8,7 @@ while (true)
     Console.WriteLine("1 - Adicionar candidatura");
     Console.WriteLine("2 - Listar candidaturas");
     Console.WriteLine("3 - Remover candidatura");
+    Console.WriteLine("4 - Atualizar status");
     Console.WriteLine("0 - Sair");
 
     var option = Console.ReadLine();
@@ -33,6 +34,16 @@ while (true)
             int id = int.Parse(Console.ReadLine() ?? "0");
             service.RemoveApplication(id);
             break;
+            case "4":
+    Console.Write("ID: ");
+    int updateId = int.Parse(Console.ReadLine() ?? "0");
+
+    Console.Write("Novo status: ");
+    var status = Console.ReadLine() ?? "";
+
+    service.UpdateApplication(updateId, status);
+    break;
+
 
         case "0":
             return;

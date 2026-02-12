@@ -1,0 +1,14 @@
+[
+  {
+    "Id": 1,
+    "Company": "skynet",
+    "Position": "ceo",
+    "Status": "entrevista"
+  },
+  {
+    "Id": 2,
+    "Company": "apple",
+    "Position": "ceo",
+    "Status": "Applied"
+  }
+]
